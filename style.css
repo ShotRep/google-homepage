@@ -1,7 +1,7 @@
 /*CSS RESET*/
 
 * {
-  border: 1px red solid; /*set before and after creating site*/
+  /* border: 1px red solid;*/ /*set before and after creating site*/
   max-width: 100%; /*keeps from side scrolling*/
   box-sizing: border-box; /*Fixes sizing when using padding*/
   margin: 0;
@@ -17,11 +17,10 @@ html {
 }
 body {
   font-size: 1.5rem;
-  color: #4f4f4f;
+  color: white;
   line-height: 1.5;
   font-family: "PT Sans", sans-serif;
-  background-color: #fffafa;
-  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.945);
 }
 h1,
 h2,
@@ -43,8 +42,16 @@ a {
 }
 
 /*PAGE CSS STYLES*/
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 header {
   display: flex;
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 header div {
@@ -61,6 +68,12 @@ header div img {
 
 header div a {
   margin: 10px;
+  background-color: blue;
+  color: white;
+  width: 70px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
 }
 
 .left-top {
@@ -78,30 +91,33 @@ header div a {
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin: 100px 0 0;
-  height: 25vh;
+  flex-grow: 1;
 }
+
 main img {
-  width: 35%;
-  margin: 0 0 20px;
+  width: 400px;
+  margin: 100px 0 50px;
 }
 
 main a {
-  margin: 10px 0 10px;
+  margin: 10px 10px;
   border-radius: 10px;
   width: 150px;
-  /* height: 40px; */
+  height: 40px;
   padding: 10px;
   text-align: center;
+  /* border: white 2px solid; */
+  color: white;
+  background-color: rgb(53, 53, 53);
 }
 
 .search-bar {
-  width: 50%;
+  width: 600px;
   height: 45px;
   border-radius: 25px;
   background-color: white;
+  border: 1px black solid;
 }
 
 main div {
@@ -110,4 +126,44 @@ main div {
   justify-content: space-around;
   width: 35%;
   text-align: center;
+}
+
+footer {
+  display: flex;
+  background-color: black;
+}
+
+footer div {
+  width: 50%;
+}
+
+.bottom-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.bottom-center p img {
+  width: 15px;
+  margin-right: 5px;
+}
+
+.bottom-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.bottom-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+footer div p {
+  margin: 20px;
 }
