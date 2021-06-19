@@ -1,0 +1,113 @@
+/*CSS RESET*/
+
+* {
+  border: 1px red solid; /*set before and after creating site*/
+  max-width: 100%; /*keeps from side scrolling*/
+  box-sizing: border-box; /*Fixes sizing when using padding*/
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/*GENERAL CSS STYLES*/
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.5rem;
+  color: #4f4f4f;
+  line-height: 1.5;
+  font-family: "PT Sans", sans-serif;
+  background-color: #fffafa;
+  border: 1px solid black;
+}
+h1,
+h2,
+h3 {
+  font-family: "Nunito", sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+a {
+  text-decoration: none;
+  color: #4f4f4f;
+}
+
+/*PAGE CSS STYLES*/
+header {
+  display: flex;
+}
+
+header div {
+  width: 50%;
+}
+
+header div p {
+  margin: 10px;
+}
+
+header div img {
+  margin: 10px;
+}
+
+header div a {
+  margin: 10px;
+}
+
+.left-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.right-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0 0;
+  height: 25vh;
+}
+main img {
+  width: 35%;
+  margin: 0 0 20px;
+}
+
+main a {
+  margin: 10px 0 10px;
+  border-radius: 10px;
+  width: 150px;
+  /* height: 40px; */
+  padding: 10px;
+  text-align: center;
+}
+
+.search-bar {
+  width: 50%;
+  height: 45px;
+  border-radius: 25px;
+  background-color: white;
+}
+
+main div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 35%;
+  text-align: center;
+}
